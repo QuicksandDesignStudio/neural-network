@@ -52,6 +52,13 @@ class Layer_Dense:
             dvalues, self.weights.T
         )  # derivative with respect to inputs is weights d(input * weight)/d(input) = weight
 
+    def get_parameters(self):
+        return self.weights, self.biases
+
+    def set_parameters(self, weights, biases):
+        self.weights = weights
+        self.biases = biases
+
 
 class Layer_Dropout:
     def __init__(self, rate):
