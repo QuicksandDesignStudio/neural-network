@@ -1,0 +1,5 @@
+.vscode/
+basic_examples/
+fashion_mnist_images.zip
+fashion_mnist_images/
+__pycache__/
